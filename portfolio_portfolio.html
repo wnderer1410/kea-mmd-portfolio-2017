@@ -1,0 +1,67 @@
+   <!DOCTYPE html>
+<html lang=”en”>
+  <head>
+      <meta charset=”utf-8”>
+      <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+      <link rel="stylesheet" href="portfolio_css.css" type="text/css">
+      <title>Frontpage</title>
+  </head>
+  <body>
+    <img src="portfolio/images/large/pencils4.png" id="pencils">
+
+    <header>
+       <nav>
+            <ul>
+
+                <li><img src="portfolio/images/medium/me_logo.png" id="meLogo"></li>
+                <li><a href="portfolio_frontpage.html">Frontpage</a></li>
+            </ul>
+        </nav>
+        </header>
+      <main>
+      <div class="item1">
+          <img src="portfolio/images/small/web_design.png" id="webdesign">
+          <img src="portfolio/images/small/video.gif" id="video">
+      </div>
+      <div class="item2">
+          <img src="portfolio/images/small/animation.gif" id="animation"><br>
+          <img src="portfolio/images/small/ux1.png" id="basicux">
+      </div>
+      </main>
+
+
+
+<script>
+      var logoDiv = document.getElementById('meLogo');
+            logoDiv.addEventListener('click', goToHomepage);
+            function goToHomepage(){
+                window.location.href = "http://wnderer.eu/KEA/portfolio_cv.html";}
+</script>
+<script>
+    var logoDiv = document.getElementById('webdesign');
+            logoDiv.addEventListener('click', goToHomepage);
+            function goToHomepage(){
+                window.location.href = "http://wnderer.eu/KEA/web_design.html";}
+</script>
+<script>
+    var logoDiv = document.getElementById('video');
+            logoDiv.addEventListener('click', goToHomepage);
+            function goToHomepage(){
+                window.location.href = "http://wnderer.eu/KEA/portfolio_video.html";}
+</script>
+<script>
+    var logoDiv = document.getElementById('animation');
+            logoDiv.addEventListener('click', goToHomepage);
+            function goToHomepage(){
+                window.location.href = "http://wnderer.eu/KEA/portfolio_animation.html";}
+</script>
+<script>
+    var logoDiv = document.getElementById('basicux');
+            logoDiv.addEventListener('click', goToHomepage);
+            function goToHomepage(){
+                window.location.href = "http://wnderer.eu/KEA/portfolio_ux.html";}
+</script>
+
+
+    </body>
+    </html>
