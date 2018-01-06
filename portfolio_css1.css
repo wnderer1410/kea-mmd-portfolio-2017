@@ -1,0 +1,1068 @@
+/*
+///////////////////////////////
+SLIDESHOW
+//////////////////////////////
+*/
+@media only screen and (max-width: 768px) {
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+.slides {
+    padding: 0;
+    width: 1366px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 1366px;
+    height: 250px;
+    display: block;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+/*
+///////////////////////////////////////////
+GRID
+/////////////////////////////////////////
+*/
+
+main {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+
+  grid-template-areas:
+    "a b"
+    "a b";
+  }
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+}
+
+.item1 {
+    text-align: center;
+}
+
+.item2 {
+    text-align: center;
+}
+
+
+/*
+////////////////////////////////////////////
+STYLE
+///////////////////////////////////////////
+*/
+
+
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 12px;
+    margin: 0;
+    background-color: bisque;
+    padding-bottom: 20px;
+
+}
+
+.box {
+    max-width: 100%;
+    height: auto;
+
+}
+div.boxing {
+    text-align: center;
+
+}
+
+main {
+    max-width: 100%;
+    padding-bottom: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header {
+    text-align: center;}
+
+img {max-width: 100%;
+}
+
+ol {
+    text-align: left;
+    padding-top: 50px;}
+section  {
+    text-align: center;
+}
+
+/*
+//////////////////////////
+NAVIGATION
+////////////////////////
+*/
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: block;
+
+    align-content: center;
+
+
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 400px;
+    text-decoration: none;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: bisque;
+    color: #333;
+}
+
+
+main a:link, a:visited {
+    background-color: bisque;
+    border: 2px solid black;
+    padding: 1em;
+
+
+}
+.uxpage{
+    padding-bottom: 0px;
+}
+
+
+/*
+/////////////////////////////
+Vertical Nav , mobile , responsive
+//////////////////////////////
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+*/
+/*
+//////////////////////////////////////////
+ID STYLE
+/////////////////////////////////////////
+*/
+
+/*
+/////////////////
+WEB DESIGN
+///////////////
+*/
+
+#border{
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+}
+
+#arrow {
+    width: 50px;
+    height: 50px;
+    padding-left: 15px;
+    max-width: 100%;
+}
+#arrow1 {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 50px;
+    padding-right: 15px;
+    max-width: 100%;
+}
+#arroww {
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+}
+#trunktest {
+    text-align: left;
+    padding-top: 55px;
+
+}
+#answer{
+    text-align: center;
+   padding-top: 15px;
+}
+#question {
+    padding-top: 50px;
+}
+#last{
+    padding-bottom: 45px;
+}
+#equals{
+    display: block;
+    margin: auto;
+    align-content: center;
+
+}
+#www{display: block;
+    align-content: center;
+    margin: auto;
+    cursor: pointer;
+    padding-bottom: 50px;
+
+}
+#space{
+    padding-bottom: 110px;
+
+}
+h1{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    color: gray;
+    font-size: 50px;
+    }
+
+h3{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+
+    }
+#pointer{
+    cursor: pointer;
+
+    }
+
+
+#groupproject {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+
+    grid-template-areas:
+    "a b"
+    "a b";
+
+}
+.itemleft {
+  grid-area: a;
+}
+.itemright {
+  grid-area: b;
+}
+
+.itemleft {
+    text-align: center;
+}
+
+.itemright {
+    text-align: center;
+}
+
+#clickhere {
+    font-size: 7px;
+}
+ol {
+    padding-bottom: 200px;
+}
+/*
+////////////
+VIDEO
+///////////
+*/
+
+#tvbackround {
+    display: block;
+    padding-left: 350px;
+    padding-top: 50px;
+    position: absolute;
+    max-width: 100%;
+}
+
+#citylife{
+    position: relative;
+    text-align: center;
+    padding-top: 95px;
+    padding-right: 105px;
+}
+#dots {
+    position: absolute;
+    max-width: 100%;
+    padding-left: 80px;
+}
+ #tvbackround {
+    display: none;
+}
+
+
+/*
+/////////////
+ANIMATION
+////////////
+*/
+
+
+#artboard{
+    max-width: 100%;
+
+
+
+}
+#spritesheet {
+    float: left;
+    padding-left: 340px;
+    text-align: center;
+    padding-top: 50px;
+}
+#play{float: right;
+padding-right: 310px;
+padding-top: 210px;
+cursor: pointer;
+}
+#map {
+    cursor: pointer;
+    padding-right: 200px;
+    max-width: 100%;
+}
+
+#strangelove{
+    padding-left: 300px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    max-width: 100%;
+}
+
+#writing{
+    padding-right: 250px;
+}
+#poster {
+    padding-left: 220px;
+    max-width: 100%;
+}
+
+
+/*
+///////////
+UX
+///////////
+*/
+
+#buttons {
+    float: right;
+    background-color: #333;
+
+}
+    .uxul {
+        width: 1520px;
+        padding: 0;
+        padding-right: 100px;
+    }
+
+    .uxul li {
+        float: right;
+
+     }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+        }
+
+
+
+
+#spritesheet {
+    padding: 5px;
+}
+#play{
+    max-width: 100%;
+    padding: 5px;
+    padding-right: 170px;
+    align-content: center;
+    margin: auto;
+}
+#strangelove {
+    padding: 0;
+}
+#map {
+    padding: 5px;
+    max-width: 100%;
+}
+#poster {
+padding: 5px;
+}
+
+#writing {
+    font-size: 12px;
+    max-width: 100%;
+    padding: 5px;
+}
+.item1 {
+    max-width: 100%;
+    padding: 5px;
+}
+h1{
+    font-size: 16px;
+}
+h2{
+    font-size: 15px;
+}
+h3 {
+    font-size: 12px;
+}
+iframe{
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 60px;
+    align-content: center;
+}
+#tvbackround {
+    display: none;
+}
+#dots{
+    padding: 0px;
+
+}
+.slides {
+    max-height: 250px;
+}
+.slide {
+    max-height: 250px;
+}
+.nav label {
+    max-height: 250px;
+    max-width: 50px;
+    font-size: 50pt;
+}
+nav ul li {
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+#groupproject {
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+
+}
+
+
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+/*
+///////////////////////////////
+SLIDESHOW
+//////////////////////////////
+*/
+@media only screen and (min-width: 768px) {
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+
+.slides {
+    padding: 0;
+    width: 1366px;
+    height: 680px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 1366px;
+    height: 680px;
+    display: block;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+/*
+///////////////////////////////////////////
+GRID
+/////////////////////////////////////////
+*/
+
+main {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+
+  grid-template-areas:
+    "a b"
+    "a b";
+  }
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+}
+
+.item1 {
+    text-align: center;
+}
+
+.item2 {
+    text-align: center;
+}
+
+
+/*
+////////////////////////////////////////////
+STYLE
+///////////////////////////////////////////
+*/
+
+body {}
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1em;
+    margin: 0;
+    background-color: bisque;
+    padding-bottom: 20px;
+
+}
+
+.box {
+    max-width: 100%;
+    height: auto;
+
+}
+div.boxing {
+    text-align: center;
+
+}
+
+main {
+    max-width: 100%;
+    padding-bottom: 2em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header {
+    text-align: center;}
+
+img {max-width: 100%;
+}
+
+ol {
+    text-align: left;
+    padding-top: 50px;}
+section  {
+    text-align: center;
+}
+
+/*
+//////////////////////////
+NAVIGATION
+////////////////////////
+*/
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+
+    text-decoration: none;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: bisque;
+    color: #333;
+}
+
+
+main a:link, a:visited {
+    background-color: bisque;
+    border: 2px solid black;
+    padding: 1em;
+
+
+}
+.uxpage{
+    padding-bottom: 0px;
+}
+
+
+/*
+//////////////////////////////////////////
+ID STYLE
+/////////////////////////////////////////
+*/
+
+/*
+/////////////////
+WEB DESIGN
+///////////////
+*/
+
+#border{
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+}
+
+#arrow {
+    padding-left: 50px;
+    max-width: 100%;
+}
+#arrow1 {
+    padding-bottom: 50px;
+    padding-right: 15px;
+    max-width: 100%;
+}
+#trunktest {
+    text-align: left;
+    padding-top: 55px;
+
+}
+#answer{
+    text-align: center;
+   padding-top: 15px;
+}
+#question {
+    padding-top: 50px;
+}
+#last{
+    padding-bottom: 45px;
+}
+#equals{
+    display: block;
+    margin: auto;
+    align-content: center;
+
+}
+#www{display: block;
+    align-content: center;
+    margin: auto;
+    cursor: pointer;
+    padding-bottom: 50px;
+
+}
+#space{
+    padding-bottom: 110px;
+
+}
+h1{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    color: gray;
+    font-size: 50px;
+    }
+
+h3{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+
+    }
+#pointer{
+    cursor: pointer;
+
+    }
+
+
+#groupproject {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+
+    grid-template-areas:
+    "a b"
+    "a b";
+
+}
+.itemleft {
+  grid-area: a;
+}
+.itemright {
+  grid-area: b;
+}
+
+.itemleft {
+    text-align: center;
+}
+
+.itemright {
+    text-align: center;
+}
+
+
+/*
+////////////
+VIDEO
+///////////
+*/
+
+#tvbackround {
+    display: block;
+    padding-left: 350px;
+    padding-top: 50px;
+    position: absolute;
+    max-width: 100%;
+}
+
+#citylife{
+    position: relative;
+    text-align: center;
+    padding-top: 95px;
+    padding-right: 160px;
+}
+#dots {
+    position: absolute;
+    max-width: 100%;
+    padding-left: 80px;
+}
+ #tvbackround {
+    display: block;
+    padding-left: 325px;
+    padding-top: 50px;
+    position: absolute;
+    max-width: 100%;
+}
+
+
+/*
+/////////////
+ANIMATION
+////////////
+*/
+
+
+#artboard{
+    max-width: 100%;
+    padding-left: 120px;
+
+}
+#spritesheet {
+    float: left;
+    padding-left: 340px;
+    text-align: center;
+    padding-top: 50px;
+}
+#play{float: right;
+padding-right: 310px;
+padding-top: 210px;
+cursor: pointer;
+}
+#map {
+    cursor: pointer;
+    padding-right: 200px;
+    max-width: 100%;
+}
+
+#strangelove{
+    padding-left: 300px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    max-width: 100%;
+}
+
+#writing{
+    padding-right: 250px;
+}
+#poster {
+    padding-left: 220px;
+    max-width: 100%;
+}
+
+
+/*
+///////////
+UX
+///////////
+*/
+
+
+#buttons {
+    float: right;
+    background-color: #333;
+
+}
+    .uxul {
+        width: 1520px;
+        padding: 0;
+        padding-right: 100px;
+    }
+
+    .uxul li {
+        float: right;
+
+     }
+}
