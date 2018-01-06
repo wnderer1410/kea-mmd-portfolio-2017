@@ -1,0 +1,388 @@
+
+
+@media only screen and (max-width: 768px) {
+body {}
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    background-color: bisque;
+}
+
+.box {
+    max-width: 100%;
+    height: auto;
+
+}
+div.boxing {
+    text-align: center;
+
+}
+main {
+    width: 100%;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+header {
+
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/*
+////////////////////////////////////
+GRID
+//////////////////////////////////
+*/
+
+main {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+
+  grid-template-areas:
+    "a b"
+    "a b";
+}
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+}
+
+.item1 {
+    text-align: right;
+}
+
+.item2 {
+    text-align: left;
+}
+
+/*
+//////////////////////////
+NAVIGATION
+////////////////////////
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: bisque;
+}
+
+li a {
+    display:inline-block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+
+
+nav ul{
+    list-style-type: none;
+}
+.a17 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+nav a{
+    color :black;
+
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none
+
+}
+nav  {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+
+
+
+}
+    ul {
+        display: inline-block;
+        text-align: center;
+    }
+#meLogo {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    max-width: 100%;
+
+
+
+    }
+
+a:link , a:visited{
+    text-decoration: none;
+    color: black;
+    background-color: bisque
+}
+a:hover , a:active{
+    text-decoration: none;
+    color: darkred;
+    background-color: bisque;
+
+}
+
+main a:link, a:visited {
+    background-color: bisque;
+    border: 2px solid black;
+    padding: 1em;
+}
+
+
+
+
+/*
+////////////////////////////////////
+ID STYLE
+///////////////////////////////////
+*/
+
+#tvs{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+
+}
+
+#cv {
+    position: absolute;
+    padding-top: 320px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+#pencils{
+    position: absolute;
+    padding-top: 200px;
+    text-align: center;
+
+}
+#video {
+    padding-top: 7px;
+    cursor: pointer;
+}
+#animation {
+    cursor: pointer;
+}
+#basicux{
+    cursor: pointer;
+}
+#webdesign {
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+}
+/*
+-------------------------------------------
+*/
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+
+body {}
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    background-color: bisque;
+}
+
+.box {
+    max-width: 100%;
+    height: auto;
+
+}
+div.boxing {
+    text-align: center;
+
+}
+main {
+    width: 100%;
+    padding-bottom: 2em;
+}
+header {
+    height: 600px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/*
+////////////////////////////////////
+GRID
+//////////////////////////////////
+*/
+
+main {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+
+  grid-template-areas:
+    "a b"
+    "a b";
+}
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+}
+
+.item1 {
+    text-align: right;
+}
+
+.item2 {
+    text-align: left;
+}
+
+/*
+//////////////////////////
+NAVIGATION
+////////////////////////
+*/
+
+nav ul li {
+    display: inline;
+    padding: 100px;
+    position:relative;
+    top: -20em;
+    left: 4em;
+}
+
+nav ul{
+    list-style-type: none;
+}
+.a17 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+nav a{
+    color :black;
+    width: 50em;
+    font-size: 40px;
+    font-style: normal;
+    text-decoration: none
+
+}
+nav  {
+    text-align: center;
+    width: 100%;
+    position: relative;
+
+}
+#meLogo {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    top: 20em;
+    left: 5em;
+    }
+
+a:link , a:visited{
+    text-decoration: none;
+    color: black;
+    background-color: bisque
+}
+a:hover , a:active{
+    text-decoration: none;
+    color: darkred;
+    background-color: bisque;
+
+}
+
+main a:link, a:visited {
+    background-color: bisque;
+    border: 2px solid black;
+    padding: 1em;
+}
+
+/*
+////////////////////////////////////
+ID STYLE
+///////////////////////////////////
+*/
+
+#tvs{
+    position:absolute;
+    padding-top: 200px;
+    left: 18px;
+
+}
+
+#cv {
+    position: absolute;
+    padding-top: 200px;
+    left: 80px;
+    padding-bottom: 40px;
+}
+
+#pencils{
+    position: absolute;
+    padding-top: 200px;
+    text-align: center;
+    left: 9px;
+}
+#video {
+    padding-top: 7px;
+    cursor: pointer;
+}
+#animation {
+    cursor: pointer;
+}
+#basicux{
+    cursor: pointer;
+}
+#webdesign {
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+}
+/*
+-------------------------------------------
+*/
+
+
+
+
+
